@@ -1,4 +1,5 @@
 <resources>
-    <string name="name">Samuel</string>
+    <string name="name1">Samuel</string>
     <string name="name2">Alex</string>
+    <string name="name3">Theo</string>
 </resources>
