@@ -1,5 +1,31 @@
 <resources>
-    <string name="name1">Samuel</string>
-    <string name="name2">Alex</string>
-    <string name="name3">Theo</string>
+
+    <!-- general -->
+    <string name="app_name">I-Cup</string>
+
+    <!-- stop watch page -->
+    <string name="stop_watch_title">Chronomètres</string>
+    <string name="column1">heure</string>
+    <string name="column3">temps</string>
+
+    <!-- temporary data -->
+    <string name="heure1">21:36</string>
+    <string name="temps1">34s</string>
+
+    <string name="heure2">21:49</string>
+    <string name="temps2">20s</string>
+
+    <string name="heure3">22:02</string>
+    <string name="temps3">43s</string>
+
+    <string name="heure4">22:23</string>
+    <string name="temps4">09s</string>
+
+    <string name="drunk_glasses">04</string>
+
+    <!-- stats page -->
+    <string name="stats_title">Statistiques</string>
+    <string name="first_graph_title">Tous les affonds</string>
+    <string name="second_graph_title">Progression</string>
+
 </resources>
