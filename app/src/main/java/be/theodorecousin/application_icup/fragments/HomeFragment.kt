@@ -15,7 +15,7 @@ class HomeFragment : Fragment() {
 
             View? {
 
-        val view = inflater?.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         //récupérer le recyclerview
         val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
@@ -24,5 +24,7 @@ class HomeFragment : Fragment() {
         return view
 
     }
+
+
 
 }

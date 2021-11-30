@@ -36,9 +36,10 @@
 
     <!-- boxes -->
     <style name="default_box">
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">50dp</item>
         <item name="android:layout_height">50dp</item>
-        <item name="android:background">@color/subbackround_color</item>
+        <item name="android:background">@color/identity_color</item>
+        <item name="android:layout_centerInParent">true</item>
     </style>
 
 
