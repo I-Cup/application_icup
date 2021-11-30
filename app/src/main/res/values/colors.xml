@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- personalized color -->
+    <color name="background_color">#353535</color>
+    <color name="subbackround_color">#636363</color>
+    <color name="elements_color">#7a7a7a</color>
+    <color name="identity_color">#ffd000</color>
+
+    <!-- font colors -->
+    <color name="text_color">#fef6e0</color>
+
+
+
 </resources>
