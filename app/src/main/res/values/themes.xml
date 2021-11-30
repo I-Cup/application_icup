@@ -13,4 +13,35 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- fonts -->
+    <style name="text_style">
+        <item name="android:fontFamily">@font/CodeProBold</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">@dimen/default_textSize</item>
+    </style>
+
+    <style name="subtitle_style" parent="text_style">
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+
+    <style name="title_style" parent="subtitle_style">
+        <item name="android:textSize">@dimen/default_titleSize</item>
+    </style>
+
+    <style name="identity_text_style" parent="title_style">
+        <item name="android:textColor">@color/identity_color</item>
+        <item name="android:textSize">@dimen/default_textSize</item>
+    </style>
+
+    <!-- boxes -->
+    <style name="default_box">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/subbackround_color</item>
+    </style>
+
+
+
+
 </resources>
