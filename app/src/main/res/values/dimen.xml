@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="default_margin">20dp</dimen>
+    <dimen name="default_margin_start">20dp</dimen>
+    <dimen name="default_margin_top">7dp</dimen>
 
-    <dimen name="default_textSize">18sp</dimen>
+
+    <dimen name="default_textSize">20sp</dimen>
+    <dimen name="default_appNameSize">30sp</dimen>
     <dimen name="default_titleSize">24sp</dimen>
 </resources>

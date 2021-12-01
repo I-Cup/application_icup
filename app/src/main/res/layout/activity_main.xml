@@ -4,13 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <FrameLayout
-        android:id="@+id/frameLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/background_color" />
+    tools:context=".MainActivity"
+    android:background="@color/background_color">
 
     <TextView
         android:id="@+id/app_name"
@@ -18,8 +13,8 @@
         style="@style/identity_text_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/default_margin"
-        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin_start"
+        android:layout_marginTop="@dimen/default_margin_top"
         android:text="@string/app_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,11 +25,11 @@
         style="@style/title_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/default_margin"
-        android:background="@color/subbackround_color"
+        android:layout_marginVertical="@dimen/default_margin_top"
+        android:background="@color/background_color"
         android:text="@string/stop_watch_title"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_name"/>
+        app:layout_constraintStart_toStartOf="@+id/app_name"
+        app:layout_constraintTop_toBottomOf="@+id/app_name" />
 
     <!-- le contenu de ce fragment va etre remplacer
      par le contenu de fragment_home.xml.
@@ -44,6 +39,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/background_color"
         tools:layout_marginTop="110dp" />
 
 

@@ -9,6 +9,9 @@
     <string name="column3">temps</string>
 
     <!-- temporary data -->
+    <string name="heure_affon">Heure affond</string>
+    <string name="chrono_affon">Chrono de affond</string>
+
     <string name="heure1">21:36</string>
     <string name="temps1">34s</string>
 
@@ -25,7 +28,7 @@
 
     <!-- stats page -->
     <string name="stats_title">Statistiques</string>
-    <string name="first_graph_title">Tous les affons</string>
+    <string name="first_graph_title">Tous les affonds</string>
     <string name="second_graph_title">Progression</string>
 
 </resources>
