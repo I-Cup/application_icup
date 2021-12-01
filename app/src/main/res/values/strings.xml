@@ -25,7 +25,7 @@
 
     <!-- stats page -->
     <string name="stats_title">Statistiques</string>
-    <string name="first_graph_title">Tous les affonds</string>
+    <string name="first_graph_title">Tous les affons</string>
     <string name="second_graph_title">Progression</string>
 
 </resources>
