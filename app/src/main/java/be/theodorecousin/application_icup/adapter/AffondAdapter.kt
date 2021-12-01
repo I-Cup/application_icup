@@ -31,8 +31,6 @@ class AffondAdapter : RecyclerView.Adapter<AffondAdapter.ViewHolder>(){
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {}
 
-    override fun getItemCount(): Int {
-        return 5
-    }
+    override fun getItemCount(): Int = 5
 
 }
