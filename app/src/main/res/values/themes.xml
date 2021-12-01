@@ -47,6 +47,7 @@
         <item name="android:layout_height">50dp</item>
         <item name="android:background">@color/identity_color</item>
         <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
     </style>
 
 
