@@ -8,5 +8,8 @@
     <dimen name="default_appNameSize">30sp</dimen>
     <dimen name="default_titleSize">24sp</dimen>
 
-    <dimen name="big_text_size">25</dimen>
+    <!-- dimen bottom taskbar -->
+    <dimen name="default_bottomtaskbar">60dp</dimen>
+    <dimen name="default_botb_spacebeetwin">50dp</dimen>
+
 </resources>
