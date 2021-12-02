@@ -17,9 +17,9 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
         android:background="@color/background_color"
-        tools:layout_marginTop="110dp"
-        />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <TextView
         android:id="@+id/app_name"
