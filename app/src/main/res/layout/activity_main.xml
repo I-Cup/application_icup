@@ -13,47 +13,30 @@
      par le contenu de fragment_home.xml.
      Cette injection est réalisée dans MainActivity.kt -->
     <FrameLayout
+        android:id="@+id/top_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_taskbar_size"
+        android:background="@color/background_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="120dp"
+        android:background="@color/background_color"
+        android:layout_marginTop="@dimen/default_taskbar_size"
+        android:layout_marginBottom="@dimen/default_taskbar_size"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar_container"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar_container" />
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_taskbar_size"
         android:background="@color/background_color"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="61dp"/>
-
-
-    <TextView
-        android:id="@+id/app_name"
-
-        style="@style/identity_text_style"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/default_margin_start"
-        android:layout_marginTop="@dimen/default_margin_top"
-        android:text="@string/app_name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        tools:layout_marginBottom="61dp"
-        />
-
-
-
-    <TextView
-        android:id="@+id/title"
-
-        style="@style/title_style"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/default_margin_top"
-        android:background="@color/background_color"
-        android:text="@string/stop_watch_title"
-        app:layout_constraintStart_toStartOf="@+id/app_name"
-        app:layout_constraintTop_toBottomOf="@+id/app_name" />
-
-
-
-
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 
