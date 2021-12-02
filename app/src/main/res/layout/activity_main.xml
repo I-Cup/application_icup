@@ -7,6 +7,20 @@
     tools:context=".MainActivity"
     android:background="@color/background_color">
 
+
+
+    <!-- le contenu de ce fragment va etre remplacer
+     par le contenu de fragment_home.xml.
+     Cette injection est réalisée dans MainActivity.kt -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:layout_marginTop="110dp"
+        />
+
     <TextView
         android:id="@+id/app_name"
 
@@ -17,7 +31,9 @@
         android:layout_marginTop="@dimen/default_margin_top"
         android:text="@string/app_name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
 
     <TextView
         android:id="@+id/title"
@@ -30,17 +46,6 @@
         android:text="@string/stop_watch_title"
         app:layout_constraintStart_toStartOf="@+id/app_name"
         app:layout_constraintTop_toBottomOf="@+id/app_name" />
-
-    <!-- le contenu de ce fragment va etre remplacer
-     par le contenu de fragment_home.xml.
-     Cette injection est réalisée dans MainActivity.kt -->
-    <FrameLayout
-        android:id="@+id/fragment_container"
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/background_color"
-        tools:layout_marginTop="110dp" />
 
 
 
