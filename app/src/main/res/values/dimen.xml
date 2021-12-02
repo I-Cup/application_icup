@@ -12,5 +12,6 @@
     <!-- dimen bottom taskbar -->
     <dimen name="default_taskbar_size">61dp</dimen>
     <dimen name="default_bottom_bar_start_margin">50dp</dimen>
+    <dimen name="default_icon_size">40dp</dimen>
 
 </resources>
