@@ -2,6 +2,7 @@
 
     <!-- general -->
     <string name="app_name">ICup</string>
+    <string name="user_name">Username</string>
 
     <!-- stop watch page -->
     <string name="stop_watch_title">Chronomètres</string>

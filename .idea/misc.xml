@@ -8,6 +8,7 @@
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/ic_history_bar_chart.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/ic_stop_watch.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/ic_user_circle.xml" value="0.1" />
+        <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/icon_back.xml" value="0.14427083333333332" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/icon_barChart.xml" value="0.1" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/icon_barChart_pressed.xml" value="0.10462962962962963" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/icon_bar_chart.xml" value="0.1" />
@@ -27,13 +28,14 @@
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable/bottom_bar_color.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1925925925925926" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable/pvs_back.xml" value="0.1" />
-        <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/bottom_task.xml" value="0.1" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/fragment_historique.xml" value="0.15443840579710144" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/fragment_statistiques.xml" value="0.15443840579710144" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/item_vertical_affond.xml" value="0.35745937961595275" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/item_vertical_chronos.xml" value="0.5301391035548686" />
+        <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/popup_settings.xml" value="0.22" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/top_bar.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/menu/bottom_bar.xml" value="0.184375" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.184375" />

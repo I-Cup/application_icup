@@ -20,7 +20,7 @@ class HomeFragment(private val context: MainActivity) : Fragment() {
 
         //récupérer le recyclerview
         val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
-        verticalRecyclerView.adapter = AffondAdapter()
+        verticalRecyclerView.adapter = AffondAdapter(context)
 
         return view
 

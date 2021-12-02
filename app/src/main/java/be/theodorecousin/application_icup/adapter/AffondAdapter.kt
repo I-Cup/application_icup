@@ -8,9 +8,12 @@ import android.widget.FrameLayout
 import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import be.theodorecousin.application_icup.MainActivity
 import be.theodorecousin.application_icup.R
 
-class AffondAdapter : RecyclerView.Adapter<AffondAdapter.ViewHolder>(){
+class AffondAdapter(val context : MainActivity) : RecyclerView.Adapter<AffondAdapter.ViewHolder>(){
+
+
 
     //layout qui gere tous les éléments à contrôler
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
@@ -22,6 +25,7 @@ class AffondAdapter : RecyclerView.Adapter<AffondAdapter.ViewHolder>(){
         val chronoIcon = view.findViewById<ImageView>(R.id.chrono_icon)
 
 
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -31,7 +35,9 @@ class AffondAdapter : RecyclerView.Adapter<AffondAdapter.ViewHolder>(){
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {}
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
+    }
 
     override fun getItemCount(): Int =24
 

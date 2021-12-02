@@ -2,13 +2,15 @@ package be.theodorecousin.application_icup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.fragment.app.Fragment
+import be.theodorecousin.application_icup.adapter.AffondAdapter
 import be.theodorecousin.application_icup.fragments.HistoryFragment
 import be.theodorecousin.application_icup.fragments.HomeFragment
 import be.theodorecousin.application_icup.fragments.StatsFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity : AppCompatActivity() {
+open class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -35,6 +37,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         loadFragment(HomeFragment(this))
+
+        findViewById<Button>(R.id.settings_button).setOnClickListener {
+            SettingsPopup(AffondAdapter(this)).show()
+        }
 
     }
 

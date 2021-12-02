@@ -25,13 +25,18 @@
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintTop_toTopOf="parent">
 
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"/>
+
         <ImageView
             android:id="@+id/chrono_icon"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/bar_color"
             android:src="@drawable/icon_user_circle" />
-
 
     </androidx.cardview.widget.CardView>
 
