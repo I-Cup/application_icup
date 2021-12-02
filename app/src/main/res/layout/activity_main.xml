@@ -24,7 +24,7 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_color"
+        android:background="@color/bar_color"
         android:layout_marginTop="@dimen/default_taskbar_size"
         android:layout_marginBottom="@dimen/default_taskbar_size"
         app:layout_constraintBottom_toTopOf="@+id/bottom_bar_container"
