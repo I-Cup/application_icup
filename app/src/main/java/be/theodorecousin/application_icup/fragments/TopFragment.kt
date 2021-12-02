@@ -9,13 +9,13 @@ import androidx.recyclerview.widget.RecyclerView
 import be.theodorecousin.application_icup.R
 import be.theodorecousin.application_icup.adapter.AffondAdapter
 
-class BottomFragement: Fragment() {
+class TopFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): //se charge d'injecter le layout dans fragment_home
 
             View? {
 
-        return inflater.inflate(R.layout.bottom_task, container, false)
+        return inflater.inflate(R.layout.top_bar, container, false)
     }
 
 }
