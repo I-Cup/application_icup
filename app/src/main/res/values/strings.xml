@@ -1,7 +1,7 @@
 <resources>
 
     <!-- general -->
-    <string name="app_name">I-Cup</string>
+    <string name="app_name">ICup</string>
 
     <!-- stop watch page -->
     <string name="stop_watch_title">Chronomètres</string>

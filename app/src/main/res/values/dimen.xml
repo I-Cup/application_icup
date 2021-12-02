@@ -7,4 +7,6 @@
     <dimen name="default_textSize">20sp</dimen>
     <dimen name="default_appNameSize">30sp</dimen>
     <dimen name="default_titleSize">24sp</dimen>
+
+    <dimen name="big_text_size">25</dimen>
 </resources>

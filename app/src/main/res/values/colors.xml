@@ -10,6 +10,7 @@
 
     <!-- personalized color -->
     <color name="background_color">#272727</color>
+    <color name="bar_color">#2e2e2e</color>
     <color name="subbackround_color">#393939</color>
     <color name="elements_color">#7a7a7a</color>
     <color name="identity_color">#ffd000</color>
