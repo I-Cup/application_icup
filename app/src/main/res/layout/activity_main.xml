@@ -21,14 +21,23 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
-        android:id="@+id/fragment_container"
+        android:id="@+id/graph_container"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/background_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar_container" />
+
+    <FrameLayout
+        android:id="@+id/chrono_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/bar_color"
-        android:layout_marginTop="@dimen/default_taskbar_size"
-        android:layout_marginBottom="@dimen/default_taskbar_size"
         app:layout_constraintBottom_toTopOf="@+id/bottom_bar_container"
-        app:layout_constraintTop_toBottomOf="@+id/top_bar_container" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graph_container"
+        android:layout_marginTop="291dp"
+        android:layout_marginBottom="@dimen/default_taskbar_size" />
 
     <FrameLayout
         android:id="@+id/bottom_bar_container"

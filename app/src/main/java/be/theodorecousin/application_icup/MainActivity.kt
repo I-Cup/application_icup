@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         //injecter le fragment dans fragment_container
 
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.fragment_container, HomeFragment())
+        transaction.replace(R.id.chrono_container, HomeFragment())
         transaction.replace(R.id.top_bar_container,TopFragment())
         transaction.replace(R.id.bottom_bar_container,BottomFragment())
         transaction.addToBackStack(null)
