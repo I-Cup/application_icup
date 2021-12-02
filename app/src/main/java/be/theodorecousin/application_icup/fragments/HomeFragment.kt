@@ -17,12 +17,9 @@ class HomeFragment : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        // liste temporaire de chrono
-        val AffondList = arrayListOf<Affond_model>()
-
         //récupérer le recyclerview
         val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
-        verticalRecyclerView.adapter = AffondAdapter(AffondList)
+        verticalRecyclerView.adapter = AffondAdapter()
 
         return view
 
