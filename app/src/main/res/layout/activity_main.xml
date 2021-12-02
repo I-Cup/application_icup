@@ -5,56 +5,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/background_color">
+    android:background="@color/bar_color">
 
-
-
-    <!-- le contenu de ces fragments va etre remplacer
-     par le contenu de fragments encodés dans les fichiers xml contenus
-     dans le package "fragments"
-     Cette injection est réalisée dans MainActivity.kt -->
-
-    <!-- layout contenant la top bar -->
-    <FrameLayout
-        android:id="@+id/top_bar_container"
+    <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/default_taskbar_size"
-        android:background="@color/background_color"
+        android:background="@color/bar_color"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/default_icon_size"
+        android:layout_height="@dimen/default_icon_size"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <!-- layout contenant le graph (?) -->
-    <FrameLayout
-        android:id="@+id/graph_container"
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:background="@color/background_color"
+        <ImageView
+            android:id="@+id/chrono_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bar_color"
+            android:src="@drawable/icon_user_circle" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/code_pro_bold"
+        android:text="@string/app_name"
+        android:textColor="@color/identity_color"
+        android:textSize="@dimen/big_text_size"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top_bar_container" />
+        app:layout_constraintTop_toTopOf="@+id/view" />
 
-    <!-- layout contenant la liste des chronos -->
+
+
     <FrameLayout
-        android:id="@+id/chrono_container"
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/bar_color"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_bar_container"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/graph_container"
-        android:layout_marginTop="291dp"
-        android:layout_marginBottom="@dimen/default_taskbar_size" />
+        android:background="@color/background_color"
+        android:layout_marginTop="@dimen/default_taskbar_size"
+        android:layout_marginBottom="@dimen/default_taskbar_size"
+/>
 
-
-    <!-- layout contenant la task bar -->
-    <FrameLayout
-        android:id="@+id/bottom_bar_container"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/default_taskbar_size"
-        android:background="@color/background_color"
+        android:background="@color/bar_color"
+        app:menu="@menu/bottom_navigation_menu"
+        app:itemIconSize="@dimen/default_icon_size"
+        app:itemIconTint="@drawable/bottom_nav_color"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="ch"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 
 

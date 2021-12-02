@@ -2,29 +2,47 @@ package be.theodorecousin.application_icup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import be.theodorecousin.application_icup.fragments.BottomFragment
+import androidx.fragment.app.Fragment
+import be.theodorecousin.application_icup.fragments.HistoryFragment
 import be.theodorecousin.application_icup.fragments.HomeFragment
-import be.theodorecousin.application_icup.fragments.TopFragment
+import be.theodorecousin.application_icup.fragments.StatsFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //injecter le fragment dans fragment_container
+        //importer la bottomnavigationview
+        val navigationView = findViewById<BottomNavigationView>(R.id.navigation_view)
+        navigationView.setOnNavigationItemSelectedListener {
+            when(it.itemId)
+            {
+                R.id.home_page -> {
+                    loadFragment(HomeFragment(this))
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.history_page -> {
+                    loadFragment(HistoryFragment(this))
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.stats_page -> {
+                    loadFragment(StatsFragment(this))
+                    return@setOnNavigationItemSelectedListener true
+                }
+                else->false
+            }
+        }
+
+        loadFragment(HomeFragment(this))
+
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+
 
         val transaction = supportFragmentManager.beginTransaction()
-
-        //injecte le linear layout affichant les chrono dans le container prévu à cet effet
-        transaction.replace(R.id.chrono_container, HomeFragment())
-
-        //injecte la top bar dans le container prévu à cet effet
-        transaction.replace(R.id.top_bar_container,TopFragment())
-
-        //injecte la task bar dans le container prévu à cet effet
-        transaction.replace(R.id.bottom_bar_container,BottomFragment())
-
-        //valider les changements
+        transaction.replace(R.id.fragment_container, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
 

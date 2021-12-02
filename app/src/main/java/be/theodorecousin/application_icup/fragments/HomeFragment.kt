@@ -6,10 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import be.theodorecousin.application_icup.MainActivity
 import be.theodorecousin.application_icup.R
 import be.theodorecousin.application_icup.adapter.AffondAdapter
 
-class HomeFragment : Fragment() {
+class HomeFragment(private val context: MainActivity) : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): //se charge d'injecter le layout dans fragment_home
 

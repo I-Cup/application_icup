@@ -6,9 +6,6 @@
     android:background="@color/bar_color"
     android:layout_marginBottom="5dp">
 
-
-    <!-- cardview concernant l'icône du profile en haut à droite -->
-    <!-- options background -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="40dp"
@@ -19,7 +16,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-        <!-- insertion de l'icône -->
         <ImageView
             android:id="@+id/chrono_icon"
             android:layout_width="match_parent"
@@ -32,7 +28,6 @@
     </androidx.cardview.widget.CardView>
 
 
-    <!-- titre (app name) -->
     <TextView
         android:id="@+id/app_name"
         android:layout_width="wrap_content"
