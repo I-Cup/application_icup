@@ -6,6 +6,8 @@
     android:layout_height="@dimen/default_bottomtaskbar"
     android:background="@color/bar_color">
 
+
+    <!-- beer left -->
     <androidx.cardview.widget.CardView
         android:id="@+id/first_icon"
         android:layout_width="60dp"
@@ -15,7 +17,7 @@
 
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="@dimen/default_botb_spacebeetwin"
-        android:layout_marginRight="@dimen/default_botb_spacebeetwin">
+        >
         <ImageView
             android:id="@+id/bottom_first"
             android:layout_width="match_parent"
@@ -24,24 +26,46 @@
             android:background="@color/bar_color"/>
     </androidx.cardview.widget.CardView>
 
+
+    <!-- stat left -->
     <androidx.cardview.widget.CardView
         android:id="@+id/second_icon"
         android:layout_width="60dp"
         android:layout_height="match_parent"
         android:background="@color/bar_color"
 
-
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginRight="@dimen/default_botb_spacebeetwin"
-        android:layout_marginLeft="@dimen/default_botb_spacebeetwin"
         >
         <ImageView
             android:id="@+id/bottom_second"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/icon_beer"
+            android:src="@drawable/icon_line_chart"
             android:background="@color/bar_color"/>
     </androidx.cardview.widget.CardView>
+
+
+    <!-- barstat middle -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/third_icon"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@color/bar_color"
+
+        app:layout_constraintEnd_toStartOf="@+id/second_icon"
+        app:layout_constraintStart_toEndOf="@+id/first_icon">
+
+        <ImageView
+            android:id="@+id/bottom_third"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bar_color"
+            android:src="@drawable/icon_bar_chart" />
+    </androidx.cardview.widget.CardView>
+
+
+
 
 
 
