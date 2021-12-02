@@ -19,7 +19,7 @@
         android:layout_marginTop="120dp"
         android:background="@color/background_color"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="@dimen/default_bottomtaskbar"/>
+        android:layout_marginBottom="61dp"/>
 
 
     <TextView
@@ -34,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        tools:layout_marginBottom="@dimen/default_bottomtaskbar"
+        tools:layout_marginBottom="61dp"
         />
 
 
