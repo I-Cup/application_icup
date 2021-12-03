@@ -1,5 +1,6 @@
 package be.theodorecousin.application_icup
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,7 +17,11 @@ open class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //importer la bottomnavigationview
+
+
+
         val navigationView = findViewById<BottomNavigationView>(R.id.navigation_view)
+
         navigationView.setOnNavigationItemSelectedListener {
             when(it.itemId)
             {
@@ -36,10 +41,9 @@ open class MainActivity : AppCompatActivity() {
             }
         }
 
-        loadFragment(HomeFragment(this))
-
         findViewById<Button>(R.id.settings_button).setOnClickListener {
-            SettingsPopup(AffondAdapter(this)).show()
+            val intent = Intent(this,SettingsActivity::class.java)
+            startActivity(intent)
         }
 
     }
