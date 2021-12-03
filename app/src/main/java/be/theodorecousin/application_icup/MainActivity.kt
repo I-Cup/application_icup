@@ -17,6 +17,7 @@ open class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //importer la bottomnavigationview
+        loadFragment(HomeFragment(this))
 
 
 
@@ -41,10 +42,12 @@ open class MainActivity : AppCompatActivity() {
             }
         }
 
-        findViewById<Button>(R.id.settings_button).setOnClickListener {
-            val intent = Intent(this,SettingsActivity::class.java)
+        findViewById<Button>(R.id.menu_button).setOnClickListener {
+            val intent = Intent(this,MenuActivity::class.java)
             startActivity(intent)
         }
+
+
 
     }
 
