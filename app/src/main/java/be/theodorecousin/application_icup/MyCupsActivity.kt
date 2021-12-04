@@ -1,5 +1,6 @@
 package be.theodorecousin.application_icup
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -11,8 +12,9 @@ open class MyCupsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_cups)
 
-        findViewById<Button>(R.id.menu_return_button).setOnClickListener {
-            onBackPressed()
+        findViewById<Button>(R.id.mescups_return_button).setOnClickListener {
+            val intent = Intent(this,MenuActivity::class.java)
+            startActivity(intent)
         }
 
         val transaction = supportFragmentManager.beginTransaction()
