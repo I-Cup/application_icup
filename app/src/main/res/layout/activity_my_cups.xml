@@ -4,13 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyCupsActivity">
+    tools:context=".MyCupsActivity"
+    android:background="@color/background_color">
 
+    <TextView
+        android:id="@+id/title_mescups"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_mescups"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/cups_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="@dimen/default_icon_size"
+        android:layout_height="@dimen/default_icon_size"
+        android:src="@drawable/icon_back"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_return_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/default_margin_start"/>
+
+    <Button
+        android:id="@+id/menu_return_button"
+        android:layout_width="@dimen/default_icon_size"
+        android:layout_height="@dimen/default_icon_size"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/cups_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" android:layout_marginTop="61dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

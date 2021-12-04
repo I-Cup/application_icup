@@ -36,7 +36,7 @@ class MesCupsAdapter(val context : MyCupsActivity) : RecyclerView.Adapter<MesCup
         return ViewHolder(view)
     }
 
-    override fun getItemCount(): Int =24
+    override fun getItemCount(): Int =3
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {}
 }

@@ -64,6 +64,7 @@
     <string name="menu_slideshow">Slideshow</string>
     
     <!-- mes cups -->
+    <string name="title_mescups">Mes Cups</string>
     <string name="owner_name">Owner</string>
     <string name="counter_affonds">94</string>
     <string name="serial_number">047202000</string>
