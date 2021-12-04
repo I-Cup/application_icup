@@ -16,6 +16,7 @@
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/icon_beer.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/icon_beer_pressed.xml" value="0.10462962962962963" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/icon_cup.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/icon_help.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/icon_lineChart.xml" value="0.10462962962962963" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/icon_lineChart_pressed.xml" value="0.10462962962962963" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable-anydpi/icon_line_chart.xml" value="0.1" />
@@ -34,7 +35,7 @@
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable/pvs_back.xml" value="0.1" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/activity_menu.xml" value="0.22" />
+        <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/activity_menu.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/activity_my_cups.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/app_bar_secondary.xml" value="0.22" />
         <entry key="..\:/Users/kneip/StudioProjects/application_icup/app/src/main/res/layout/bottom_task.xml" value="0.1" />

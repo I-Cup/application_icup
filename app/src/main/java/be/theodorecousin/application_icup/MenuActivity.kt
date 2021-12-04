@@ -20,7 +20,10 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        findViewById<Button>(R.id.info_button).setOnClickListener {
+            val intent = Intent(this,InfoActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
