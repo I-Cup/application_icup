@@ -4,6 +4,7 @@
     <string name="app_name">ICup</string>
     <string name="user_name">Username</string>
     <string name="settings">Réglages</string>
+    <string name="my_cups">Mes Cups</string>
 
     <!-- stop watch page -->
     <string name="stop_watch_title">Chronomètres</string>
@@ -35,7 +36,7 @@
     <string name="title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
+    <string name="messages_header">Nom d\'utilisateur</string>
     <string name="sync_header">Sync</string>
 
     <!-- Messages Preferences -->
