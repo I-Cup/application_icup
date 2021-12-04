@@ -6,13 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import be.theodorecousin.application_icup.MainActivity
+import be.theodorecousin.application_icup.MyCupsActivity
 import be.theodorecousin.application_icup.R
-import be.theodorecousin.application_icup.adapter.AffondAdapter
+import be.theodorecousin.application_icup.adapter.MesCupsAdapter
 
-class HomeFragment(private val context: MainActivity) : Fragment() {
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?):
+class CupsFragment(private val context: MyCupsActivity) : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ):
     //se charge d'injecter le layout dans fragment_home
 
             View? {
@@ -21,12 +24,8 @@ class HomeFragment(private val context: MainActivity) : Fragment() {
 
         //récupérer le recyclerview
         val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
-        verticalRecyclerView.adapter = AffondAdapter(context)
+        verticalRecyclerView.adapter = MesCupsAdapter(context)
 
         return view
-
     }
-
-
-
 }

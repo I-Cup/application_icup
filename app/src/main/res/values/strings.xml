@@ -62,5 +62,11 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    
+    <!-- mes cups -->
+    <string name="owner_name">Owner</string>
+    <string name="counter_affonds">94</string>
+    <string name="serial_number">047202000</string>
+    
 
 </resources>

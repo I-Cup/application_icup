@@ -2,11 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="80dp"
     android:background="@color/background_color"
     android:layout_marginBottom="5dp">
 
     <View
+        android:id="@+id/view4"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@color/bar_color"
@@ -28,40 +29,57 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/background_color"
-            android:src="@drawable/icon_beer"
+            android:src="@drawable/icon_cup"
             />
 
 
     </androidx.cardview.widget.CardView>
 
     <View
-        android:id="@+id/view_separation"
+        android:id="@+id/view_separation_horizontal"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <View
+        android:id="@+id/view_separation_vertical"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="@+id/view_separation_horizontal"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        android:layout_marginLeft="100dp"/>
+
     <TextView
-        android:id="@+id/heure_affon"
+        android:id="@+id/owner_name"
         style="@style/text_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/default_margin_start"
-        android:text="@string/heure1"
-        app:layout_constraintBottom_toTopOf="@+id/view_separation"
+        android:text="@string/owner_name"
+        app:layout_constraintBottom_toBottomOf="@+id/view_separation_horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/view_separation_vertical"
         app:layout_constraintStart_toEndOf="@+id/cardView" />
 
     <TextView
-        android:id="@+id/chrono_affon"
+        android:id="@+id/serial_number"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/serial_number"
+        app:layout_constraintTop_toBottomOf="@+id/view_separation_horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/view_separation_vertical"
+        app:layout_constraintStart_toEndOf="@+id/cardView" />
+
+
+    <TextView
+        android:id="@+id/counter_affonds"
         style="@style/contrasting_text_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/temps1"
-        app:layout_constraintStart_toStartOf="@+id/heure_affon"
-        app:layout_constraintTop_toBottomOf="@+id/heure_affon" />
-
-
-
-
+        android:text="@string/counter_affonds"
+        app:layout_constraintBottom_toBottomOf="@+id/view_separation_horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/view_separation_horizontal"
+        app:layout_constraintStart_toEndOf="@+id/view_separation_vertical"
+        app:layout_constraintTop_toTopOf="@+id/view_separation_horizontal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

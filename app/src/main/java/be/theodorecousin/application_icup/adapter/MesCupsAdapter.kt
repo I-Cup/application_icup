@@ -9,9 +9,10 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import be.theodorecousin.application_icup.MainActivity
+import be.theodorecousin.application_icup.MyCupsActivity
 import be.theodorecousin.application_icup.R
 
-class AffondAdapter(val context : MainActivity) : RecyclerView.Adapter<AffondAdapter.ViewHolder>(){
+class MesCupsAdapter(val context : MyCupsActivity) : RecyclerView.Adapter<MesCupsAdapter.ViewHolder>(){
 
 
 
@@ -22,7 +23,7 @@ class AffondAdapter(val context : MainActivity) : RecyclerView.Adapter<AffondAda
 
         //box_item est une variable venant du fichier item_vertical_affond.xml
         //il s'agit de l'élément générique que nous allons injecter dans notre linear layout dynamic
-        val chronoIcon = view.findViewById<ImageView>(R.id.chrono_icon)
+        val CupIcon = view.findViewById<ImageView>(R.id.cup_icon)
 
 
 
@@ -31,13 +32,11 @@ class AffondAdapter(val context : MainActivity) : RecyclerView.Adapter<AffondAda
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater
             .from(parent.context)
-            .inflate(R.layout.item_vertical_chronos, parent, false)
+            .inflate(R.layout.item_vertical_mescups, parent, false)
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
-    }
-
     override fun getItemCount(): Int =24
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {}
 }
