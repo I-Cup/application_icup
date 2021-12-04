@@ -20,7 +20,7 @@ open class MainActivity : AppCompatActivity() {
         loadFragment(HomeFragment(this))
 
 
-
+        //activation de la barre de navigation dans la MainActivity
         val navigationView = findViewById<BottomNavigationView>(R.id.navigation_view)
 
         navigationView.setOnNavigationItemSelectedListener {
@@ -42,6 +42,7 @@ open class MainActivity : AppCompatActivity() {
             }
         }
 
+        //activation du bouton Menu
         findViewById<Button>(R.id.menu_button).setOnClickListener {
             val intent = Intent(this,MenuActivity::class.java)
             startActivity(intent)
@@ -52,7 +53,6 @@ open class MainActivity : AppCompatActivity() {
     }
 
     private fun loadFragment(fragment: Fragment) {
-
 
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.fragment_container, fragment)
