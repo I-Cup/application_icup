@@ -1,6 +1,7 @@
 package be.theodorecousin.application_icup
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceFragmentCompat
 
@@ -14,6 +15,10 @@ class SettingsActivity : AppCompatActivity() {
                     .beginTransaction()
                     .replace(R.id.settings, SettingsFragment())
                     .commit()
+        }
+
+        findViewById<Button>(R.id.settings_return_button).setOnClickListener {
+            onNavigateUp()
         }
     }
 

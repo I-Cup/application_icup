@@ -4,9 +4,10 @@
 
 
     <PreferenceCategory
-        app:title="@string/messages_header">
+        android:title="@string/user_name">
 
         <EditTextPreference
+
             app:key="signature"
             app:title="Votre surnom"
             app:useSimpleSummaryProvider="true"/>

@@ -42,7 +42,7 @@
     <FrameLayout
         android:id="@+id/cups_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" android:layout_marginTop="61dp"/>
-
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/default_taskbar_size"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
