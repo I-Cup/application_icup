@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@color/bar_color"
-        app:layout_constraintBottom_toTopOf="@+id/settings_view"
+        app:layout_constraintBottom_toTopOf="@+id/profile_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -48,14 +48,59 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+
+    <!-- Profile -->
+
+    <View
+        android:id="@+id/profile_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintBottom_toTopOf="@id/settings_view"/>
+
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="@dimen/default_list_icon_size"
+
+        android:layout_height="@dimen/default_list_icon_size"
+        android:layout_marginStart="@dimen/default_margin_start"
+        android:src="@drawable/icon_user_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_view"
+        app:layout_constraintStart_toStartOf="@+id/profile_view"
+        app:layout_constraintTop_toTopOf="@+id/profile_view" />
+
+    <TextView
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_view"
+        app:layout_constraintStart_toEndOf="@+id/profile_icon"
+        app:layout_constraintTop_toTopOf="@+id/profile_view"
+        android:layout_marginStart="@dimen/default_margin_start"/>
+
+    <Button
+        android:id="@+id/profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_view"
+        app:layout_constraintStart_toStartOf="@+id/profile_view"
+        app:layout_constraintTop_toTopOf="@+id/profile_view"
+        android:background="#00000000"/>
+
+    <!-- Réglages -->
+
     <View
         android:id="@+id/settings_view"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toBottomOf="@id/username" />
+
+        app:layout_constraintTop_toBottomOf="@id/profile_view" />
 
     <ImageView
         android:id="@+id/settings_icon"
@@ -88,6 +133,7 @@
         app:layout_constraintTop_toTopOf="@+id/settings_view"
         android:background="#00000000"/>
 
+    <!-- Mes Cups -->
     <View
         android:id="@+id/my_cups_view"
         android:layout_width="match_parent"
@@ -127,6 +173,7 @@
         app:layout_constraintTop_toTopOf="@id/my_cups_view"
         android:background="#00000000" />
 
+    <!-- Comment utiliser mon ICup? -->
     <Button
         android:id="@+id/info_button"
         android:layout_width="match_parent"

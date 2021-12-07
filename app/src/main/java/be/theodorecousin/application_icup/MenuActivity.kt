@@ -11,7 +11,7 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
 
         findViewById<Button>(R.id.menu_return_button).setOnClickListener {
-            onNavigateUp()
+            onBackPressed()
         }
 
         findViewById<Button>(R.id.settings_button).setOnClickListener {
@@ -28,6 +28,13 @@ class MenuActivity : AppCompatActivity() {
             val intent = Intent(this,InfoActivity::class.java)
             startActivity(intent)
         }
+
+        findViewById<Button>(R.id.profile_button).setOnClickListener {
+            val intent = Intent(this,ProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 

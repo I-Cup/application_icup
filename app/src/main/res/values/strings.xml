@@ -1,11 +1,14 @@
 <resources>
 
+    <!-- Variables -->
+    <string name="user_name">Username</string>
+
     <!-- general -->
     <string name="app_name">ICup</string>
-    <string name="user_name">Username</string>
     <string name="settings">Réglages</string>
     <string name="my_cups">Mes Cups</string>
-    <string name="info">Comment utiliser mon ICup</string>
+    <string name="info">Comment utiliser mon ICup?</string>
+    <string name="profile">Mon Profile</string>
 
 
     <!-- stop watch page -->
@@ -66,12 +69,16 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    
+
     <!-- mes cups -->
     <string name="title_mescups">Mes Cups</string>
     <string name="owner_name">Owner</string>
     <string name="counter_affonds">94</string>
     <string name="serial_number">047202000</string>
-    
+
+    <!-- Profile -->
+    <string name="change_name">Changer de Pseudo</string>
+    <string name="submit">Valider</string>
+
 
 </resources>

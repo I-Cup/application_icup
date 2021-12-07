@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-
-
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -23,7 +24,7 @@
         <activity
             android:name=".MenuActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
@@ -32,12 +33,11 @@
         <activity
             android:name=".InfoActivity"
             android:exported="false"
-            android:parentActivityName=".MenuActivity"/>
+            android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".MyCupsActivity"
             android:exported="false"
-            android:parentActivityName=".MenuActivity"/>
-
+            android:parentActivityName=".MenuActivity" />
     </application>
 
 </manifest>
