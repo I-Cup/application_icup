@@ -39,7 +39,7 @@
 
     <!-- Preference Titles -->
     <string name="messages_header">Nom d\'utilisateur</string>
-    <string name="sync_header">Sync</string>
+    <string name="Settings2header">Préférences</string>
 
     <!-- Messages Preferences -->
     <string name="signature_title">Your signature</string>
@@ -50,6 +50,10 @@
     <string name="attachment_title">Download incoming attachments</string>
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
+    <string-array name="personnespartagés">
+        <item>Amis uniquement</item>
+        <item>tout le monde</item>
+    </string-array>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="title_activity_secondary">SecondaryActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

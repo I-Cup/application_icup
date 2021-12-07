@@ -1,37 +1,50 @@
-<PreferenceScreen
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
 
     <PreferenceCategory
         app:title="@string/messages_header">
 
         <EditTextPreference
             app:key="signature"
-            app:title="@string/signature_title"
-            app:useSimpleSummaryProvider="true"/>
-
-        <ListPreference
-            app:key="reply"
-            app:title="@string/reply_title"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
-            app:defaultValue="reply"
+            app:title="Votre surnom"
             app:useSimpleSummaryProvider="true"/>
 
     </PreferenceCategory>
 
     <PreferenceCategory
-        app:title="@string/sync_header">
+        app:title="@string/Settings2header">
 
         <SwitchPreferenceCompat
             app:key="sync"
-            app:title="@string/sync_title"/>
+            app:title="Dark mode"
+            app:summaryOn="Activer le mode sombre"
+            app:summaryOff="Désactiver le mode sombre"/>
 
         <SwitchPreferenceCompat
             app:key="attachment"
-            app:title="@string/attachment_title"
-            app:summaryOn="@string/attachment_summary_on"
-            app:summaryOff="@string/attachment_summary_off"
-            app:dependency="sync"/>
+            app:title="Partager mes stats"
+            app:summaryOn="Tes stats sont partagés !"
+            app:summaryOff="Partages tes stats et participe aux classements !"
+            />
+        <SwitchPreferenceCompat
+            app:key="bite"
+            app:title="partager anonymement"
+            app:summaryOn="tes stats sont partagées anonymement"
+            app:summaryOff="partage tes stats anonymenent"
+            app:dependency="attachment"
+
+            />
+        <ListPreference
+            app:key=""
+            app:title="partagé avec"
+            app:summary="choisi avec qui tu pratage tes stats"
+            app:entries="@array/personnespartagés"
+            app:entryValues="@array/personnespartagés"
+            app:dependency="attachment"/>
+
+
 
     </PreferenceCategory>
 
