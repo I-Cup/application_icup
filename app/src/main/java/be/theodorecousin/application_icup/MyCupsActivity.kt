@@ -14,7 +14,7 @@ open class MyCupsActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.mescups_return_button).setOnClickListener {
             val intent = Intent(this,MenuActivity::class.java)
-            startActivity(intent)
+            onNavigateUp()
         }
 
         val transaction = supportFragmentManager.beginTransaction()
