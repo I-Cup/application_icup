@@ -9,26 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity
-            android:name=".InfoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MyCupsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MenuActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SecondaryActivity"
-            android:exported="false"
-            android:label="@string/title_activity_secondary"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".SettingsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_settings"
-            android:parentActivityName=".SecondaryActivity" />
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -38,6 +20,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".InfoActivity"
+            android:exported="false"
+            android:parentActivityName=".MenuActivity"/>
+        <activity
+            android:name=".MyCupsActivity"
+            android:exported="false"
+            android:parentActivityName=".MenuActivity"/>
+
     </application>
 
 </manifest>
