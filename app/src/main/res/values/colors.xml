@@ -19,6 +19,10 @@
     <color name="text_color">#DDDDDD</color>
     <color name="title_color">#FFFFFF</color>
 
+    <!-- validation colors -->
+    <color name="False">#a83232</color>
+    <color name="True">#7eba41</color>
+
 
 
 

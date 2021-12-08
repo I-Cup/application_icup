@@ -1,12 +1,14 @@
 package be.theodorecousin.application_icup
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
-import be.theodorecousin.application_icup.databinding.ActivityProfileBinding
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -20,41 +22,46 @@ class ProfileActivity : AppCompatActivity() {
 
     fun getSet(view: View){
         val editTxt = findViewById<EditText>(R.id.input_pseudo)
-        val msg = editTxt.text.toString()
-        if (ValidatePseudo(msg)) {
-            val txtView = findViewById<TextView>(R.id.ton_pseudo).apply {
-                text = msg
+        val pseudo = editTxt.text.toString()
+        if (ValidatePseudo(pseudo)) {
+            val pseudo_current_page = findViewById<TextView>(R.id.ton_pseudo).apply {
+                text = pseudo
             }
         }
     }
 
     //retourne true si le pseudo est valide, false sinon
     fun ValidatePseudo(string: String): Boolean {
-        if (string.isEmpty()) {
-            toast("Attention: pseudo vide!")
-            return false
-        }
-        else if (string.length < 4) {
-            toast("Attention: pseudo trop court!")
-            return false
-        }
-        else if (string.filterNot { it.isWhitespace()}.length < 4) {
-            toast("Attention: nombre de caractères valides trop faible!")
-            return false
-        }
-        else if (string.length > 16) {
-            toast("Attention: pseudo trop long!")
-            return false
-        }
+
+        val current_pseudo = findViewById<EditText>(R.id.ton_pseudo).text.toString()
+        var validated = false
+        var message = "Erreur inconnue"
+
+
+        if (string.isEmpty()) {message = "Attention: pseudo vide!"}
+
+        else if (string.length < 4) {message = "Attention: pseudo trop court!"}
+
+        else if (string.filterNot { it.isWhitespace()}.length < 4) { message = "Attention: nombre de caractères valides trop faible!"}
+
+        else if (string.length > 16) {message ="Attention: pseudo trop long!"}
+
+        else if (string == current_pseudo){message = "Attention: pseudo identique!"}
+
         else {
-            toast("Pseudo modifié avec succès!")
-            return true
+            message = "Pseudo modifié avec succès!"
+            validated = true
         }
+
+        val message_box = findViewById<TextView>(R.id.message).apply {
+            text = message
+        }
+
+        //toast(message)
+        return validated
     }
 
     fun toast(string: String){
         Toast.makeText(applicationContext, string, Toast.LENGTH_SHORT).show()
     }
-
-
 }
