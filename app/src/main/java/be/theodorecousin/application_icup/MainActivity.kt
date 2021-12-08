@@ -16,6 +16,13 @@ open class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //chager notre repository
+        val repo = AffondRepository()
+
+        // maj la liste des affonds
+        repo.updateData()
+
+
         //importer la bottomnavigationview
         loadFragment(HomeFragment(this))
 
@@ -47,6 +54,8 @@ open class MainActivity : AppCompatActivity() {
             val intent = Intent(this,MenuActivity::class.java)
             startActivity(intent)
         }
+
+
 
 
 
